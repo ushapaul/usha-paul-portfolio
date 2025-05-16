@@ -1,0 +1,209 @@
+body {
+  scroll-behavior: smooth;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 70px; /* For fixed navbar spacing */
+}
+
+/* Navbar styling */
+.navbar {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  color: #00c6ff !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #00c6ff !important;
+}
+
+/* Section styling */
+.section {
+  padding: 100px 15px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.bg-light.bg-opacity-10 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Headings */
+h1, h2, h4, h5 {
+  color: #00c6ff;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1rem;
+  color: #e1e1e1;
+}
+
+/* Profile photo */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #00c6ff;
+  box-shadow: 0 0 15px #00c6ff;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+/* Buttons */
+.btn-info {
+  background-color: #00c6ff;
+  border-color: #00c6ff;
+  font-weight: 600;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-info:hover,
+.btn-info:focus {
+  background-color: #008bbf;
+  border-color: #008bbf;
+  color: #fff;
+}
+
+.btn-outline-info {
+  color: #00c6ff;
+  border-color: #00c6ff;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-info:hover,
+.btn-outline-info:focus {
+  background-color: #00c6ff;
+  color: #000;
+  border-color: #00c6ff;
+}
+
+/* Social links buttons */
+.social-links a.btn {
+  margin-right: 10px;
+}
+
+/* Project cards */
+.project-card {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 198, 255, 0.4);
+}
+
+.project-card h4 {
+  color: #00c6ff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+/* Education table */
+.table-dark {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  border-color: transparent;
+}
+
+.table thead th {
+  border-bottom: 2px solid #00c6ff;
+  color: #00c6ff;
+  font-weight: 600;
+}
+
+.table tbody td {
+  color: #ccc;
+}
+
+/* Contact icons */
+#contact .d-flex a {
+  font-size: 2rem;
+  color: #00c6ff;
+  transition: color 0.3s ease;
+}
+
+#contact .d-flex a:hover {
+  color: #008bbf;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .section {
+    padding: 70px 10px;
+  }
+  
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+/* Contact section specific styles */
+#contact p {
+  font-size: 1.1rem;
+  color: #ddd;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: #00c6ff;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 198, 255, 0.5);
+  color: #fff;
+  font-size: 28px;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-icons a:hover,
+.contact-icons a:focus {
+  background: #008bbf;
+  box-shadow: 0 6px 20px rgba(0, 139, 191, 0.7);
+  transform: scale(1.15);
+  color: #fff;
+  outline: none;
+}
